@@ -1,0 +1,22 @@
+﻿@model WeatherData
+
+@{
+    ViewData["Title"] = "Json Page";
+}
+
+<div class="container bg">
+    <div class="row" style="color:whitesmoke">
+        <div class="col-4">
+            <h2>Weather Description</h2>
+            <h2>@Model.weather[0].description</h2>
+        </div>
+        <div class="col-4 ">
+            <h2>Min Temp</h2>
+            <h2>@Model.main.temp_min</h2>
+        </div>
+        <div class="col-4">
+            <h2>Max Temp</h2>
+            <h2>@Model.main.temp_max</h2>
+        </div>
+    </div>
+</div>

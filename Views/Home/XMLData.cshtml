@@ -1,0 +1,21 @@
+﻿@model WeatherResponsexml
+@{
+    ViewData["Title"] = "XML Page";
+}
+
+<div class="container bg">
+    <div class="row" style="color:whitesmoke">
+        <div class="col-4">
+            <h2>Weather Description</h2>
+            <h2>@Model.weather.description</h2>
+        </div>
+        <div class="col-4 ">
+            <h2>Min Temp</h2>
+            <h2>@Model.temperature.min</h2>
+        </div>
+        <div class="col-4">
+            <h2>Max Temp</h2>
+            <h2>@Model.temperature.max</h2>
+        </div>
+    </div>
+</div>
